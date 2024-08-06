@@ -21,7 +21,7 @@ let package = Package(
             https://github.com/adison-ads/adison-offerwall-global-core/releases/download/0.27.0-beta1/\
             AdisonOfferwallGlobalCore.zip
             """,
-            checksum: ""
+            checksum: "cc314dc321047bc29c98055f1e7a3b5d6b4f079fd3189443b6e220fd242ad72a"
         )
     ]
 )
