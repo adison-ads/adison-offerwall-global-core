@@ -3,6 +3,9 @@
 
 import PackageDescription
 
+let version = "0.27.0-beta3"
+let checksum = "b86b289e181aed788688842425980920dc62668691119678a847ba0091913402"
+
 let package = Package(
     name: "AdisonOfferwallGlobalCore",
     products: [
@@ -18,10 +21,10 @@ let package = Package(
         .binaryTarget(
             name: "AdisonOfferwallGlobalCore",
             url: """
-            https://github.com/adison-ads/adison-offerwall-global-core/releases/download/0.27.0-beta3/\
+            https://github.com/adison-ads/adison-offerwall-global-core/releases/download/\(version)/\
             AdisonOfferwallGlobalCore.zip
             """,
-            checksum: "b86b289e181aed788688842425980920dc62668691119678a847ba0091913402"
+            checksum: checksum
         )
     ]
 )
