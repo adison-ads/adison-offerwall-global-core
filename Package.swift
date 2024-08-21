@@ -4,7 +4,7 @@
 import PackageDescription
 
 let version = "0.27.0"
-let checksum = "0b85c7ddf713c3477ffc913fdc8b9d8d49bde9699f8180eb363fcbb74bb76b9b"
+let checksum = "4e0843b932aa7a3eabab808d919e0bda9a730315b595a5647a08f3b0572c37a6"
 
 let package = Package(
     name: "AdisonOfferwallGlobalCore",
