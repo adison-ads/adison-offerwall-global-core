@@ -5,7 +5,7 @@ import PackageDescription
 
 let version = "0.28.6"
 let checksum = "08ce7179eb65bdda8b5f18bf9bf57b10b5707e53a0c6446375a6e69a55f4654f"
-let commonVersion = "0.9.6"
+let modelVersion = "0.9.6"
 
 let package = Package(
     name: "AdisonOfferwallGlobalCore",
@@ -17,7 +17,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/adison-ads/adison-offerwall-common", exact: Version(stringLiteral: commonVersion))
+        .package(url: "https://github.com/adison-ads/adison-offerwall-global-model", exact: Version(stringLiteral: modelVersion))
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -30,7 +30,7 @@ let package = Package(
         .target(
             name: "AdisonOfferwallGlobalCoreTarget",
             dependencies: [
-                .product(name: "AdisonOfferwallCommon", package: "adison-offerwall-common")
+                .product(name: "AdisonOfferwallGlobalModel", package: "adison-offerwall-global-model")
             ],
             path: "Sources"
         )
